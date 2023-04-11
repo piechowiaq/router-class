@@ -6,6 +6,8 @@ class Request
 {
     public function getPath()
     {
+        /* Generating PATH_INFO */
+
         $path = $_SERVER['REQUEST_URI'] ?? '/';
 
         $position = strpos($path, '?');
