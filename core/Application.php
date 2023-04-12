@@ -15,7 +15,7 @@ class Application
 
     public function run()
     {
-        //todo
+        echo $this->router->resolve();
     }
 
 }
