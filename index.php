@@ -12,10 +12,6 @@ $app->router->get('/', function ()
 }
 );
 
-$app->router->get('/contact', function ()
-{
-    return 'Contact';
-}
-);
+$app->router->get('/contact', 'home');
 
 $app->run();
