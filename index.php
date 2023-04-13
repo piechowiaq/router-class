@@ -1,6 +1,7 @@
 <?php
 
 use app\core\Application;
+use app\controllers\SiteController;
 
 require_once __DIR__.'/vendor/autoload.php';
 
@@ -15,11 +16,7 @@ $app->router->get('/', function ()
 $app->router->get('/home', 'home');
 
 
-$app->router->post('/home', function ()
-{
-    return 'Handling Submitted Data';
-}
-);
+$app->router->post('/home', [SiteController::class, 'handelContent']);
 
 
 
