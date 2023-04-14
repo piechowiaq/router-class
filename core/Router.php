@@ -38,11 +38,6 @@ class Router
             return $this->renderView($callback);
         }
         if (is_array($callback)) {
-
-            echo "<pre>";
-            var_dump($callback);
-            echo "</pre>";
-            exit;
             $callback[0] = new $callback[0];
         }
 

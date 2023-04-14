@@ -16,7 +16,8 @@ $app->router->get('/', function ()
 $app->router->get('/home', 'home');
 
 
-$app->router->post('/home', [SiteController::class, 'handelContent']);
+$app->router->post('/home', [SiteController::class, 'contact']);
+
 
 
 
